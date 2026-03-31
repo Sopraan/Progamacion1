@@ -1,4 +1,4 @@
-#Ej 1
+# # Ej 1
 
 # nombre = input("Ingresa tu nombre: ")
 
@@ -54,7 +54,7 @@
 # print(f"Promedio por producto {promedio:.2f}")
 
 
-#Ej 2
+# # Ej 2
 
 # usuario="alumno"
 # clave="python123"
@@ -115,7 +115,7 @@
              
 
 
-# EJ 3
+# # EJ 3
 
 # lunes1= ""
 # lunes2= ""
@@ -323,12 +323,107 @@
 
 # Ej 4
 
-energia= 100
-tiempo=12
-cerraduras_abiertas=0
-alarma= False
-codigo_parcial=""
+# energia= 100
+# tiempo=12
+# cerraduras_abiertas=0
+# alarma= False
+# codigo_parcial=""
+# contador_spam=0
+# menu=0
+# # Inut dentro de while
 
-# Inut dentro de while
+# nombre_del_agente=input("Ingresa el nombre del agente ")
 
-nombre_del_agente=input("Ingres el nombre del agente")
+
+# while not nombre_del_agente.isalpha():
+#     print("Error, ingresa solamente letras ")
+#     nombre_del_agente=input("Ingresa el nombre del agente ")
+
+
+# while energia > 0 and cerraduras_abiertas <= 3 and alarma != True:
+
+#     print("1. Forzar Cerradura(-20 energia - 2 tiempo)  2. Hakear Panel (-10 Energia -3 Tiempo)  3. Descansar (+15 Energia -1 Tiempo)")
+
+#     menu=input("Ingrese la accion deseada ")
+
+#     if not menu.isdigit() or not (1<=int(menu) <= 3):
+#         print("Ingresa un numero del 1 al 3")
+#         continue
+#     menu=int(menu)
+    
+#     if menu ==1:
+#         energia= energia - 20
+#         tiempo=tiempo - 2
+#         contador_spam+=1
+#         if energia<40:
+#             riesgo_de_alarma=input("Ingresa un numeo del 1 al 3 ")
+#             if not riesgo_de_alarma.isdigit() or not (1<= int(riesgo_de_alarma)<=3):
+#                 print("Error, ingresa un numero del 1 al 3 ")
+            
+#                 if int(riesgo_de_alarma) == 3:
+#                     alarma= True
+#                     continue
+#         if alarma!= True:
+#             cerraduras_abiertas+=1    
+        
+#     print(f"Energia= {energia} Tiempo= {tiempo} Cerraduras Abiertas {cerraduras_abiertas} ContadorSPAM {contador_spam}")   
+#    #FALTA REGLA ANTI SPAM
+
+#     if menu ==2:
+#         energia= energia -10
+#         tiempo = tiempo -3
+
+#         for i in range (4):
+#             letras=input("Ingresa 1 letra ")
+            
+#             if not letras.isalpha():
+#                 print("Ingresa solamente letras ")
+#             if len(letras)<= 8:
+#                 codigo_parcial= codigo_parcial + letras
+#                 print(f"Codigo Parcial= {codigo_parcial}")
+        
+
+#         if len(codigo_parcial)== 8:
+#             cerraduras_abiertas+=1
+#             codigo_parcial=""
+#         contador_spam=0    
+
+
+
+        
+
+#     if menu== 3:
+#         if alarma == True and energia >95:
+#             resto= 100 - energia
+#             energia= energia + resto
+#             tiempo-=1
+
+#         if energia >85:
+#             resto= 100 - energia
+#             energia= energia+ resto
+#             tiempo-=1
+#         else:
+#             energia=energia+15
+#             tiempo-=1
+#         contador_spam=0
+        
+#     if contador_spam == 3:
+#         alarma=True
+#     print(f"{contador_spam}")
+#     if contador_spam == 3 and alarma == True:
+#         print("DERROTA POR SPAMERO")  
+#         break  
+            
+#     elif cerraduras_abiertas == 3 and contador_spam < 3:
+#         print("VICTORIA")
+#         break
+#     elif energia <=0 or tiempo <= 0:
+#         print("DERROTA")
+#         break
+#     elif alarma == True and tiempo <=3 and cerraduras_abiertas != 3:
+#         print("DERROTA")
+#         print("Boveda Bloqueada")
+#         break
+ 
+
+# EJ 5
